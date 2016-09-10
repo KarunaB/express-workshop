@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.post('/create-post', function (req, res){
-	fs.readFile(__dirname + '/data/posts.json',
+	fs.readFile(__dirname + '/public/data/posts.json',
 		function (error, file) {
 			if (error || !req.body.blogpost) {
 				console.log('Error reading file!');
@@ -26,7 +26,7 @@ app.post('/create-post', function (req, res){
 
 			// Now convert JSON to string
 			// and write it to the file
-			fs.writeFile(__dirname + '/data/posts.json',
+			fs.writeFile(__dirname + '/public/data/posts.json',
 				JSON.stringify(parsedFile),
 				function (error) {
 					console.log('error', error);
