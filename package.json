@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/KarunaB/express-workshop/issues"
   },
-  "homepage": "https://github.com/KarunaB/express-workshop#readme"
+  "homepage": "https://github.com/KarunaB/express-workshop#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
